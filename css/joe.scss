@@ -1,0 +1,125 @@
+---
+---
+
+// $orange: #FF8A00;
+// $purple: #DBC9E8;
+// $green: #19FF48;
+// $red: #FF490D;
+// $tan: #E8DF9F;
+
+$cyan: #3EC3D5;
+$red: #E9405A;
+//$cream: #EFF1C2;
+$cream: #FEFEFE;
+$orange: #F04E23;
+//$black: #262626;
+$black: #333;
+
+$link-color: $orange;
+$link-hover-color: $cyan;
+$dominant-color: $cream;
+$font-color: $black;
+
+$font-stack: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$logo-font: 'Waiting for the Sunrise', cursive;
+
+$screen-md-min: 768px;
+
+@import url(http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+body {
+	background-color: $dominant-color;
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 300;
+		letter-spacing: 1px;
+	}
+
+	h1, h2, h3, h4, h5, h6, p, &{
+		color: $font-color;
+		font-family: $font-stack;
+
+		a {
+			color: $link-color;
+
+			&:hover {
+				color: $link-hover-color;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.heading {
+		color: #FFF;
+		background-color: $orange;
+		padding: 10px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	img {
+		max-width: 100%;
+
+		&.face {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	footer {
+		background-color: $orange;
+		padding: 10px 0 0;
+
+		p {
+			color: #FFF;
+		}
+	}
+
+	.navbar-default {
+		background-color: transparent;
+		border: none;
+
+		.navbar-brand {
+			font-family: $logo-font;
+			font-size: 40px;
+			margin-top: 2px;
+			color: $link-color;
+
+			&:hover {
+				color: $link-hover-color;
+			}
+		}
+	}
+
+	.highlight {
+		border-radius: 4px;
+	}
+
+	.block {
+		background-color: $orange;
+		padding: 10px;
+		margin-bottom: 10px;
+
+		p {
+			color: #FFF;
+			text-align: center;
+		}
+	}
+
+	.social {
+		margin-bottom: 10px;
+
+		a {
+			font-size: 36px;
+		}
+	}
+}
+
+@media (min-width: $screen-md-min) {
+	.sidebar {
+		padding-top: 20px;
+	}
+}

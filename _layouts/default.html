@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+    <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="container">
+        <div class="col-md-9">
+          {{ content }}
+        </div>
+        <div class="col-md-3 sidebar">
+          <div class="block">
+            <img class="face" src="/img/joe-castelli.png" alt="Joe Castelli" title="Me.">
+            <p>I'm Joe. I make things for the internet, often using Drupal, WordPress and, most recently, Meteor.js.</p>
+          </div>
+          <div class="social">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+              <a href="https://www.facebook.com/joe.castelli" title="Joe Castelli on Facebook">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+              <a href="https://twitter.com/joe_castelli" title="Joe Castelli on Twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+              <a href="https://github.com/jcastelli" title="Joe Castelli on GitHub">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+              <a href="https://www.linkedin.com/in/josephdcastelli" title="Joe Castelli on LinkedIn">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    </body>
+</html>
