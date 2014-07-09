@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The command line, in plain English BUTTTT what if our content spill onto two lines?"
+title:  "The command line, in plain English"
 date:   2014-01-04 21:11:00
 categories: operating-systems command-line web-ed
 ---

@@ -7,6 +7,70 @@
     <atom:link href="http://joecastelli.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Which CMS is best? It&#39;s complicated.</title>
+        <description>&lt;p&gt;As I’ve said in a previous post about content management systems, we can tussle over which is best until we turn purple.&lt;/p&gt;
+
+&lt;p&gt;I’ve worked with quite a few by now, and here’s a quick rundown on some of them, and why I like them. I’ll try to revisit this post from time-to-time as things evolve.&lt;/p&gt;
+
+&lt;h2 id=&quot;drupaldrupal&quot;&gt;&lt;a href=&quot;https://www.drupal.org/&quot; title=&quot;Learn more about Drupal&quot;&gt;Drupal&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Drupal remains my favorite CMS, hands down. It hasn’t historically been the most pleasant to work with at all times, but it’s steadily improving, and my early experience with Drupal 8 has been awesome.&lt;/p&gt;
+
+&lt;p&gt;A lower-level tool than many systems, Drupal straddles the line between CMS and pure PHP framework. It’s extremely developer friendly, and you can build anything from a standard site to a Twitter clone using Drupal and some custom code.&lt;/p&gt;
+
+&lt;p&gt;Throw in an awesome community with very active IRC channels, a slew of modules that are completely free to install and a security team constantly identifying issues in contrib – Drupal takes the cake, in my book.&lt;/p&gt;
+
+&lt;h2 id=&quot;wordpresswp&quot;&gt;&lt;a href=&quot;http://wordpress.org/&quot; title=&quot;Learn more about WordPress&quot;&gt;WordPress&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;WordPress – Not a distant second by any means, WordPress sports a fantastic community, a wealth of free, open source plugins and  the prettiest admin interface in the game. If your WordPress site is built by someone who knows what they’re doing, adding content will always be a great experience.&lt;/p&gt;
+
+&lt;p&gt;As a developer, WP is the easiest CMS to build with, but I find its blog-first roots to be a bit odd when coming back from other systems sometimes. In short, WP has its way of coding, Drupal has its own, and I find Drupal’s approach to be the most flexible and enjoyable to code for.&lt;/p&gt;
+
+&lt;p&gt;When I do a new WordPress theme from scratch, I like to start with Roots. It brings a lot of awesome to the table and helps me feel a bit more at home.&lt;/p&gt;
+
+&lt;p&gt;If you just need a basic website with a blog, you can’t go wrong with WP. If your site’s going to be larger, need serious custom functionality (customer portals, paywall content and the like) at some point, WordPress may not be the ideal choice.&lt;/p&gt;
+
+&lt;p&gt;WordPress also gets bonus points as the one I personally recommend for people interested in learning how to code. As a webdev, it’s where I truly got my start.&lt;/p&gt;
+
+&lt;h2 id=&quot;jekylljekyll&quot;&gt;&lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Learn more about Jekyll&quot;&gt;Jekyll&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Jekyll isn’t technically a CMS, but it helps me manage and publish content, so I’ll call it one anyway. It’s a static site generator. You build templates, create Markdown files containing your content and generate your site.&lt;/p&gt;
+
+&lt;p&gt;You can’t use it to handle form submissions. You can’t have users logging in. You’ve got to be a bit geeky to work with it, and you’d have to mix it with other solutions to get any server-side interactivity.&lt;/p&gt;
+
+&lt;p&gt;Why use Jekyll, then? Glad you asked. Speed. Speed is the answer. Jekyll is ridiculously fast because the server isn’t running any app code to serve pages. They’re all already there, as though you made each one individually in Dreamweaver or something. This is pretty much what Web servers were originally designed to do, and they do it well.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.kissmetrics.com/loading-time/&quot; title=&quot;An article on how page load times can affect your conversions&quot;&gt;Studies have shown&lt;/a&gt; that the longer your site takes to load, the greater the chance that you will not convert that user, whether your CTA is to buy something or subscribe to a newsletter. People like fast sh*t.&lt;/p&gt;
+
+&lt;p&gt;Also, this is as easy to design for as a platform can be. You can create a base HTML file that looks exactly how you want your website to look and Jekyllize it very quickly.&lt;/p&gt;
+
+&lt;p&gt;This site is built with Jekyll. Combine that with SSD hosting at DigitalOcean and things are pretty damn snappy, no? As such, Jekyll’s my new recommendation for any situation where it can possibly fit, even for cases where it needs to be shoehorned just a little.&lt;/p&gt;
+
+&lt;p&gt;For bonus reading, see how &lt;a href=&quot;http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform&quot; title=&quot;A blog detailing a serious, real-world Jekyll deployment&quot;&gt;Obama’s campaign website&lt;/a&gt; leveraged Jekyll to increase conversions.&lt;/p&gt;
+
+&lt;h2 id=&quot;concrete5concrete5&quot;&gt;&lt;a href=&quot;http://www.concrete5.org/&quot; title=&quot;Learn more about concrete5&quot;&gt;concrete5&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Concrete5 is another one I’ve seen gain more traction recently, so I’d taken it for a spin. I’d describe it as a balance between Jekyll and other systems. It was among the first I’m aware of to feature in-context editing, which is especially cool when building a site for people who consider themselves especially computer illiterate.&lt;/p&gt;
+
+&lt;p&gt;The thing that makes it Jekylly is the speed with which you can go from design to website. It’s another pretty easy templating system, at least for getting a basic setup going. Definitely worth taking for a spin.&lt;/p&gt;
+
+&lt;p&gt;It’s the add-ons that turn me off. Even glancing at its marketplace of add-ons now, I’m seeing open source software repackaged for concrete and being sold for $50. I’m not wiring it up to try, so there may be serious added value that’s worth the money, but this is a far cry from what I’m accustomed to.&lt;/p&gt;
+
+&lt;h2 id=&quot;joomlajoomla&quot;&gt;&lt;a href=&quot;http://www.joomla.org/&quot; title=&quot;Learn more about Joomla!&quot;&gt;Joomla!&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Joomla! is another big one. I’ll admit, it’s been a long while since I’ve worked with it. It’s always felt a little dirty to me. Drupal’s documentation is great, save for the occasional unfinished page. The WordPress documentation has always been legendary. Joomla!’s has always been fragmented and underwhelming when I’ve looked for it. That’s bad.&lt;/p&gt;
+
+&lt;p&gt;One bonus I gather from Joomla! is it’s supposed to be pretty flexible, but I’ve never tried using it that way, and can’t speak to its APIs and such.&lt;/p&gt;
+
+&lt;p&gt;I’d love to have a conversation with a Joomla! expert who could explain what he sees in it, but as it stands I can’t recommend Joomla! over Drupal or WordPress. That may be entirely because of my lack of experience with the CMS, so don’t take my word for it.&lt;/p&gt;
+
+&lt;h2 id=&quot;microsoft-sharepointshit&quot;&gt;&lt;a href=&quot;http://office.microsoft.com/en-us/sharepoint/&quot; title=&quot;Learn more about Sharepoint&quot;&gt;Microsoft Sharepoint&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Just typing Sharepoint makes me want to puke. I haven’t had to do much with it, but what I did have to do was a bad experience.  It’s always seemed like a confused product, but it looks like it’s improved a bit.&lt;/p&gt;
+
+&lt;p&gt;I’m not a Microsoft dev these days, so if you are, Sharepoint may be awesome for you. It may be the best option if you’re building for a company that’s already deep into Microsoft products and you need to integrate. But this is definitely not the platform you’d choose for a blog…&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 02 Jul 2014 17:11:00 -0400</pubDate>
+        <link>http://joecastelli.com/which-cms-is-best</link>
+        <guid isPermaLink="true">http://joecastelli.com/which-cms-is-best</guid>
+      </item>
+    
+      <item>
         <title>Drupal 7: Remove database prefixes</title>
         <description>&lt;p&gt;When I started at General Data, I began building the company’s new website with Drupal 7, and assumed nothing. Any precaution I could think to take, I took.&lt;/p&gt;
 
@@ -167,7 +231,7 @@
       </item>
     
       <item>
-        <title>The command line, in plain English BUTTTT what if our content spill onto two lines?</title>
+        <title>The command line, in plain English</title>
         <description>&lt;p&gt;When I first began really diving into Web development, the lack of a clear starting point was staggering. All I could do was latch on to what I understood, read a lot, and research the terms that’d come up that I’d never even heard before. &lt;/p&gt;
 
 &lt;p&gt;I took two courses in college that I’d argue to be my cornerstone: System administration I, and System administration II. Being a sysadmin in the real world pretty much means maintaining the servers and other infrastructure upon which other people – developers in particular – rely. The thing about these courses that gave me such a fantastic head start was the deep education on the command line interface of *nix-like operating systems.&lt;/p&gt;
