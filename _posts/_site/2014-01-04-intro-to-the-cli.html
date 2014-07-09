@@ -1,0 +1,30 @@
+<p>When I first began really diving into Web development, the lack of a clear starting point was staggering. All I could do was latch on to what I understood, read a lot, and research the terms that’d come up that I’d never even heard before.</p>
+
+<p>I took two courses in college that I’d argue to be my cornerstone: System administration I, and System administration II. Being a sysadmin in the real world pretty much means maintaining the servers and other infrastructure upon which other people – developers in particular – rely. The thing about these courses that gave me such a fantastic head start was the deep education on the command line interface of *nix-like operating systems.</p>
+
+<p>No matter what operating system you use on a day-to-day basis, most people interact with a user interface that makes life breezy. Drag something into the trash can, empty it sometimes. Click ‘File,’ then ‘New File’ to create a new document. Double click an icon to open a file in the program it was created with. You get my drift.</p>
+
+<p>Under the hood, these actions are being translated into lower-level commands that you can issue yourself, bypassing the UI entirely. You can open a session in your terminal – you can find the ‘Terminal’ program on OS X – maneuver into a folder, create a new one inside it, create a file inside of that, then add text to that file.</p>
+
+<p>Let’s say you want to create a new folder on your desktop and create a few files within it. Rather than right click, fumble with naming/renaming, a few commands will get us where we need to be. On OS X:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Change directory into my Desktop</span>
+<span class="nb">cd</span> ~/Desktop
+
+<span class="c"># Now that my working directory is my desktop, let&#39;s make my new folder</span>
+mkdir newFolder
+
+<span class="c"># Let&#39;s verify the folder has been created by listing the contents of the Desktop</span>
+ls -al
+
+<span class="c"># We can see our new folder. Let&#39;s change into it</span>
+<span class="nb">cd </span>newFolder
+
+<span class="c"># Now let&#39;s create a few text files that we can come back to and edit later</span>
+touch my-diary.txt foo.txt bar.txt
+
+<span class="c"># Now let&#39;s list the contents of our new folder to ensure our files were created</span>
+ls -al</code></pre></div>
+
+<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>.</p>
+

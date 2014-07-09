@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>In a nutshell: How the internet works</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <link rel="canonical" href="http://joecastelli.com/how-the-internet-works">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/joe.css">
+    <link rel="stylesheet" href="/css/code.css">
+</head>
+
+
+    <body>
+
+    <header class="container">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">joecastelli.com</a>
+      </div>
+    </div><!-- /.container-fluid -->
+  </nav>
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        <div class="col-md-9">
+          <div class="post">
+
+  <header class="post-header">
+    <h1>In a nutshell: How the internet works</h1>
+    <p class="meta">Feb 7, 2014</p>
+  </header>
+
+  <article class="post-content">
+  <p>I’m generally told I do a solid job of explaining technical things to newcomers, so I thought I’d do some introductory breakdowns of the various parts of Web development in hopes that I can help some friends and wandering Googlers.</p>
+
+<p>A great place to start is with Web servers. The internet is just a crapload of computers and other devices (phones, tablets, etc.) connecting to one another across a crapload of networks. The deep mechanics behind how our computers talk to each other isn’t important for diving into webdev, but there’s a part that is crucial to beginning to code dynamic websites.</p>
+
+<p>You’ve probably heard the term ‘server’ by now. The word can be intimidating, but it’s not as angry as it may seem in pop culture. Technically, the Web server is software sitting on a computer somewhere, waiting for you to send it a request. Apache, IIS and Nginx are the three you see a lot. I’m using Nginx to serve this very website. By default, Nginx and its peers will ‘listen’ on a certain port for incoming requests. A request is made when you type a URL into a browser. You’re asking for a website, and the server, well, serves it up.</p>
+
+<p>If you’re using a desktop computer to view this site, you can literally install free server software on the machine you’re using, start the server, create an HTML document and other devices on your home network can view it by typing your IP address into their favorite browser. The word ‘server’ is also often used interchangeably to describe the hardware (the computer itself) or both at the same time. “We’ve got 12 servers in our IT room” would more than likely be referring to the whole machines, not the software they’re running.</p>
+
+<p>So when you open your browser and type in google.com, your browser talks to the nearest DNS server, which contains the IP address for Google. Once it’s got that IP, it finds the actual server where Google’s waiting for you. Once it sees your request, it sees that you’re going to the main page, and sends you the HTML, CSS and JavaScript that make up that main page. Your browser literally downloads these files, and the pretty page is put together right in front of you.</p>
+
+<h2 id="server-side-stuff">Server-side stuff</h2>
+
+<p>Web browsers used to be pretty terrible. Hell, computers were, too. Just a few years ago, when we wanted a page to be dynamic – think of your profile picture popping up on Facebook – all of that processing would happen on the server before the page you requested was sent back to you.</p>
+
+<p>A good example of this is your Facebook homepage. Even though many people are at www.facebook.com, what you see is completely unique. You see your friends’ posts, targeted advertising, groups you’re in, messages, etc. While the way Facebook does this is much more sophisticated, early dynamic websites did most of this magic on the server before the page ever loaded into your browser.</p>
+
+<p>Languages like PHP and Python run on the server before any pages are sent. This can be animated by some easy-to-read code. Let’s pretend we have a super simple page that just greets the logged-in user. The HTML that would end up on your screen would look like this:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>Hello, Joe!<span class="nt">&lt;/h1&gt;</span></code></pre></div>
+
+<p>But it’d be silly to create individual pages like this with each user’s name. That’d get messy very quickly. Instead, we do some processing on the server to grab the name of the logged in user. Let’s do a mixture of PHP and comments where PHP would be to articulate this a bit.</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<span class="c1">// ^~That&#39;s the opening PHP tag. The server&#39;s going to execute all of the code within these tags.</span>
+<span class="c1">//The &#39;//&#39;&#39; tells the server to ignore this line. It&#39;s a comment.</span>
+
+<span class="k">function</span> <span class="nf">getUserFirstName</span><span class="p">()</span> <span class="p">{</span>
+	<span class="c1">// We&#39;ll pretend code is here that grabs the currently logged-in user&#39;s username from the database and throws it into a variable called $firstName. Then we&#39;ll return it. In coding, we often use functions to contain code we&#39;ll want to run multiple times from elsewhere in our application.</span>
+
+	<span class="k">return</span> <span class="nv">$firstName</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Variable names can be whatever we want, though you want to give them names that make sense.</span>
+<span class="nv">$cheeseburger</span> <span class="o">=</span> <span class="nx">getUserFirstName</span><span class="p">();</span>
+
+<span class="c1">//We called our function and put it into a variable. Now we drop it into our content.</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+
+<span class="x">&lt;h1&gt;Hello, </span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$cheeseburger</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x"> &lt;/h1&gt;</span></code></pre></div>
+
+<p>The resulting HTML would look exactly like that last snippet where I hardcoded my name into the <code>&lt;h1&gt;</code> tag. Notice there can be as many PHP blocks in one document as you need. If we pretend this file is called <code>myname.php</code> and it’s on this very website, you could visit joecastelli.com/myname.php, the PHP code would run on the server, then simple HTML would appear in the document that lands in your browser.</p>
+
+<p>As the Web has evolved, this has shifted a bit. JavaScript is often being used on the client (your browser) to perform tasks servers used to handle alone. </p>
+
+<h2 id="javascript">JavaScript</h2>
+
+<p>The combination of HTML, CSS and a server-side language like PHP was pretty much the way of the world for a while there. Once you requested <code>myname.php</code>, your computer was pretty much done talking to the server until you requested another page. There were few cases where the page would update without refreshing, which is a feature of many sites we’ve grown quite accustomed to recently.</p>
+
+<p>JavaScript is the language that runs in the browser. It can move things around, count stuff, change things, store data, and do pretty much anything PHP or Python can, but in your browser. HTML alone doesn’t do much outside of suppply content and structure:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>Hello, Joe!<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p&gt;</span>This is just a paragraph sitting in a paragraph tag.<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+<p>Adding CSS makes it prettier, not smarter:</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">h1</span> <span class="p">{</span>
+	<span class="k">font-weight</span><span class="o">:</span> <span class="m">100</span><span class="p">;</span>
+	<span class="k">font-size</span><span class="o">:</span> <span class="m">30px</span><span class="p">;</span>
+	<span class="k">font-family</span><span class="o">:</span> <span class="s2">&quot;Helvetica Neue&quot;</span><span class="o">,</span><span class="n">Helvetica</span><span class="o">,</span><span class="n">Arial</span><span class="o">,</span><span class="k">sans-serif</span><span class="p">;</span>
+	<span class="k">color</span><span class="o">:</span> <span class="nb">purple</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span> <span class="p">{</span>
+	<span class="k">color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
+	<span class="k">font-size</span><span class="o">:</span> <span class="m">14px</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<p>By themselves, they’re pretty stupid. With JavaScript, the possibilities are endless. Let’s do some stuff so you can see what I mean. For this little playtime, you’ll need to be on a desktop or laptop computer using Firefox or Chrome to view this web page.</p>
+
+<p>Right click anywhere on the page and click ‘Inspect Element.’ In the drawer that pops up, look at the top for ‘Console’ and click that. From here, we can run whatever JavaScript we want. Look for the little prompt – <code>&gt;</code> – as that’s where we’re about to type. In Firefox, it’ll be at the bottom of that drawer. In Chrome, it’ll be at the top of the white space, but below anything that’s already been output (errors, messages, etc.).</p>
+
+<p>Once you’re there, paste in <code>alert('testing');</code> and hit Enter. <code>alert()</code> is one of the many functions that come baked in with JavaScript.</p>
+
+<p>For this site, I’m also loading jQuery, which is just a JavaScript framework. It brings a lot of cool stuff to the table, including some animation funcitons. Let’s wreck some things with jQuery before we wrap this one up.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Calling the jQuery function slideUp() on every &lt;p&gt; tag on this page.</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">).</span><span class="nx">slideUp</span><span class="p">();</span>
+
+<span class="c1">// This next line will refresh the entire page after eight seconds, undoing our mess so you can come back to the last paragraph here.</span>
+<span class="nx">setTimeout</span><span class="p">(</span><span class="s2">&quot;window.location.reload()&quot;</span><span class="p">,</span> <span class="mi">8000</span><span class="p">);</span></code></pre></div>
+
+<p>You can do this on any number of sites. Try it on Pinterest, but replace the ‘p’ with ‘img’ to make all the images disappear. So now you’re equipped to trick someone into thinking you’re an evil hacker! The thing is, if a given site is NOT using jQuery, this won’t fly.</p>
+
+<p>Notice that reloading the page removed our hackery. That’s because we only changed the document that was loaded into our browser, not the actual file on my server.</p>
+
+<p>I just threw a lot at the wall, but I’m putting this post down for now. Feel free to comment with any questions, requests for new posts, or just to drop a hello!</p>
+
+  </article>
+    
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	    var disqus_shortname = 'joecastelliblog'; // required: replace example with your forum shortname
+	    /* * * DON'T EDIT BELOW THIS LINE * * */
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+</div>
+        </div>
+        <div class="col-md-3 sidebar">
+          <div class="block">
+            <img class="face" src="/img/joe-castelli.png" alt="Joe Castelli" title="Me.">
+            <p>I'm Joe. I make things for the internet, often using Drupal, WordPress and, most recently, Meteor.js.</p>
+          </div>
+          <div class="social">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+              <a href="https://www.facebook.com/joe.castelli" title="Joe Castelli on Facebook">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+              <a href="https://twitter.com/joe_castelli" title="Joe Castelli on Twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+              <a href="https://github.com/jcastelli" title="Joe Castelli on GitHub">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+              <a href="https://www.linkedin.com/in/josephdcastelli" title="Joe Castelli on LinkedIn">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <p><i class="fa fa-smile-o"></i>2014 Don't steal my shit.</p>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</footer>
+
+
+    </body>
+</html>
