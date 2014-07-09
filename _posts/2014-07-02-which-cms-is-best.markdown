@@ -17,7 +17,7 @@ A lower-level tool than many systems, Drupal straddles the line between CMS and 
 Throw in an awesome community with very active IRC channels, a slew of modules that are completely free to install and a security team constantly identifying issues in contrib – Drupal takes the cake, in my book.
 
 ## [WordPress][wp]
-WordPress – Not a distant second by any means, WordPress sports a fantastic community, a wealth of free, open source plugins and  the prettiest admin interface in the game. If your WordPress site is built by someone who knows what they're doing, adding content will always be a great experience.
+Not a distant second by any means, WordPress sports a fantastic community, a wealth of free, open source plugins and  the prettiest admin interface in the game. If your WordPress site is built by someone who knows what they're doing, adding content will always be a great experience.
 
 As a developer, WP is the easiest CMS to build with, but I find its blog-first roots to be a bit odd when coming back from other systems sometimes. In short, WP has its way of coding, Drupal has its own, and I find Drupal's approach to be the most flexible and enjoyable to code for.
 
