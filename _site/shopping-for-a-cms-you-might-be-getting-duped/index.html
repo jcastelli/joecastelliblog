@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>The command line, in plain English</title>
+    <title>Shopping for the right CMS for your next website? You may be getting duped.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
-    <link rel="canonical" href="http://joecastelli.com/intro-to-the-cli">
+    <link rel="canonical" href="http://joecastelli.com/shopping-for-a-cms-you-might-be-getting-duped">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -37,53 +37,39 @@
           <div class="post">
 
   <header class="post-header">
-    <h1>The command line, in plain English</h1>
-    <p class="meta">Jan 4, 2014</p>
+    <h1>Shopping for the right CMS for your next website? You may be getting duped.</h1>
+    <p class="meta">Jun 7, 2014</p>
   </header>
 
   <article class="post-content">
-  <p>When I first began really diving into Web development, the lack of a clear starting point was staggering. All I could do was latch on to what I understood, read a lot, and research the terms that’d come up that I’d never even heard before. </p>
+  <p>You create a product. You market it. You sell it. Duh, right? Everybody’s gotta eat. But there’s are things being said in day-to-day my-CMS-is-better-than-your-CMS discussions and marketing that I consider pretty misleading. In hopes that this will help at least one poor Googling soul who knows next to nothing about content management systems but has been tasked with choosing the next one his or her company will use for the new website, I’m going to air this out.</p>
 
-<p>I took two courses in college that I’d argue to be my cornerstone: System administration I, and System administration II. Being a sysadmin in the real world pretty much means maintaining the servers and other infrastructure upon which other people – developers in particular – rely. The thing about these courses that gave me such a fantastic head start was the deep education on the command line interface of *nix-like operating systems.</p>
+<p>I’ve worked with a lot of the big ones, and I can promise you things. Listen.</p>
 
-<p>No matter what operating system you use on a day-to-day basis, most people interact with a user interface that makes life breezy. Drag something into the trash can, empty it sometimes. Click ‘File,’ then ‘New File’ to create a new document. Double click an icon to open a file in the program it was created with. You get my drift.</p>
+<h2 id="the-big-debate">The big debate.</h2>
+<p>As I’ve alluded to, us Web peeps tend to have our favorite content management systems – the one that’s most fun to code for, easiest to extend, does the most work for us – the ‘why’ is moot. We have favorites, even if we say we don’t, and even if we will always choose the right tool for the job.</p>
 
-<p>Under the hood, these actions are being translated into lower-level commands that you can issue yourself, bypassing the UI entirely. You can open a session in your terminal – you can find the ‘Terminal’ program on OS X – maneuver into a folder, create a new one inside it, create a file inside of that, then add text to that file.</p>
+<p>We are passionate about our choice, and tend to defend it like we do other things we’re passionate about – our choice of personal computer (love my Macs, nose-up to the naysayers), our favorite car (I will duel you if you bash my Mustangs), our family (I will WRECK you). Sometimes, when one  defends one’s favorite something, seeing through the feels makes you to say stupid things.</p>
 
-<p>Let’s say you want to create a new folder on your desktop and create a few files within it. Rather than right click, fumble with naming/renaming, a few commands will get us where we need to be. On OS X:</p>
+<p>Drupal vs. WordPress vs. Joomla vs. Concrete5 vs. Magento vs. Jekyll vs. [insert your favorite underdog here] – all have strengths and weaknesses. We can stab at each other’s favorite until we’re blue in the face and exactly nobody has changed their minds. </p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Change directory into my Desktop</span>
-<span class="c">## Note: The tilde(~) represents your home directory, which, in *nix systems, is completely unique for all users</span>
-<span class="nb">cd</span> ~/Desktop
+<p>It’s relatively easy to identify a passionate Web nerd and see it for what it is, but there’s another factoid-spewer lurking in plain sight. It’s the marketing people trying to drive adoption of their system over the others.</p>
 
-<span class="c"># Now that my working directory is my desktop, let&#39;s make my new folder</span>
-mkdir newFolder
+<p>I’ve certainly got nothing against businesses marketing. Do what you’ve gotta do. What I take issue with is the sometimes subtle, misleading language that the decision makers at companies around the world may be affected by.</p>
 
-<span class="c"># Let&#39;s verify the folder has been created by listing the contents of the Desktop</span>
-ls -al
+<h2 id="how-am-i-getting-duped">How am I getting duped?</h2>
+<p>There’s one marketing habit in particular that drives me insane. I stumbled across a CMS I hadn’t heard of. It seems to be popular with the big agencies around the world. I don’t even remember the name, to be honest.</p>
 
-<span class="c"># We can see our new folder. Let&#39;s change into it</span>
-<span class="nb">cd </span>newFolder
+<p>The thing to be hesitant of are any generic claims that a specific CMS is ‘always 100% standards-compliant HTML5’ or ‘100% responsive.’ Anything like that is likely to be complete dupery.</p>
 
-<span class="c"># Now let&#39;s create a few text files that we can come back to and edit later</span>
-touch my-diary.txt foo.txt bar.txt
+<p>It might not even be on its website. It could be in an affiliate’s blog/site, tweet, etc. The reason it’s dupery is that once you or the team you’ve hired get to building your site, these are features that they must implement.</p>
 
-<span class="c"># Now let&#39;s list the contents of our new folder to ensure our files were created</span>
-ls -al</code></pre></div>
+<p>While a CMS-based site COULD be compliant, responsive and the like (a good CMS should have fallback templates) once we begin theming, templating, writing extensions and the like, it’s up to us to produce proper markup. As we customize our site, we create, edit and/or repurpose template files. If the main selling point was this responsiveness or HTML5 awesomeness and your devs created a front end featuring neither, you’ve been duped, and tens of thousands of dollars later, no doubt.</p>
 
-<p>At face value, this seems entirely pointless. Why learn commands to do this sort of thing? For starters, you could toss all these commands into a script, add a bit more code and run it on a schedule, creating new folders with files inside them. Similar things are often done in the real world to create log files that we can look back upon when things break.</p>
+<p>Note that any claims about the admin dashboard and other areas that users and customers don’t see are likely valid. As developers, we rarely do anything to disrupt the structure/look of the back end admin area when building with a CMS. This part of the site is entirely separate from the public side, and exists solely for adding content and otherwise administrating the site.</p>
 
-<p>The thing is, these basic commands are only a start. The tools available to a savvy user are incredibly powerful. Have you ever wanted to separate the videos and images on an SD card into separate folders in one swoop? Maybe find all files in a folder than contain the word ‘taxes?’ You can also build an entire Web application using only the command line. In fact, I have several developer friends who do just that.</p>
+<p>That all said, <a href="/which-cms-is-best" title="Click here to see my CMS comparison article">check out my CMS comparison</a> for a rundown of my favorites.</p>
 
-<p>Even if you don’t have a book or nerdfriend handy, you can see the ‘manual’ for almost any command by using the <code>man</code> command.</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">man ls<span class="p">;</span>
-man <span class="nb">cd</span><span class="p">;</span>
-man touch<span class="p">;</span>
-
-<span class="c"># Each of the above commands will output a manual for the following command.</span></code></pre></div>
-
-<p>Learning your way around a Linux or Mac command line can ultimately lead to a better day-to-day computing experience. Take it for a spin!</p>
 
   </article>
     

@@ -52,6 +52,18 @@ body {
     margin-bottom: 10px; }
     body .social a {
       font-size: 36px; }
+  body p.all-posts {
+    text-align: center;
+    text-transform: lowercase; }
+  body ul.post-list {
+    list-style: none;
+    padding-left: 0; }
+    body ul.post-list a {
+      font-size: 20px; }
+    body ul.post-list span.date {
+      color: #777;
+      display: inline-block;
+      width: 100px; }
 
 @media (min-width: 768px) {
   .sidebar {

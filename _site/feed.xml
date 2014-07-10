@@ -8,7 +8,7 @@
     
       <item>
         <title>Which CMS is best? It&#39;s complicated.</title>
-        <description>&lt;p&gt;As I’ve said in a previous post about content management systems, we can tussle over which is best until we turn purple.&lt;/p&gt;
+        <description>&lt;p&gt;As I’ve said in &lt;a href=&quot;/shopping-for-a-cms-you-might-be-getting-duped&quot; title=&quot;Click here to see my older post about CMS decisions&quot;&gt;a previous post about content management systems&lt;/a&gt;, we can tussle over which is best until we turn purple.&lt;/p&gt;
 
 &lt;p&gt;I’ve worked with quite a few by now, and here’s a quick rundown on some of them, and why I like them. I’ll try to revisit this post from time-to-time as things evolve.&lt;/p&gt;
 
@@ -20,7 +20,7 @@
 &lt;p&gt;Throw in an awesome community with very active IRC channels, a slew of modules that are completely free to install and a security team constantly identifying issues in contrib – Drupal takes the cake, in my book.&lt;/p&gt;
 
 &lt;h2 id=&quot;wordpresswp&quot;&gt;&lt;a href=&quot;http://wordpress.org/&quot; title=&quot;Learn more about WordPress&quot;&gt;WordPress&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;WordPress – Not a distant second by any means, WordPress sports a fantastic community, a wealth of free, open source plugins and  the prettiest admin interface in the game. If your WordPress site is built by someone who knows what they’re doing, adding content will always be a great experience.&lt;/p&gt;
+&lt;p&gt;Not a distant second by any means, WordPress sports a fantastic community, a wealth of free, open source plugins and  the prettiest admin interface in the game. If your WordPress site is built by someone who knows what they’re doing, adding content will always be a great experience.&lt;/p&gt;
 
 &lt;p&gt;As a developer, WP is the easiest CMS to build with, but I find its blog-first roots to be a bit odd when coming back from other systems sometimes. In short, WP has its way of coding, Drupal has its own, and I find Drupal’s approach to be the most flexible and enjoyable to code for.&lt;/p&gt;
 
@@ -43,7 +43,7 @@
 
 &lt;p&gt;This site is built with Jekyll. Combine that with SSD hosting at DigitalOcean and things are pretty damn snappy, no? As such, Jekyll’s my new recommendation for any situation where it can possibly fit, even for cases where it needs to be shoehorned just a little.&lt;/p&gt;
 
-&lt;p&gt;For bonus reading, see how &lt;a href=&quot;http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform&quot; title=&quot;A blog detailing a serious, real-world Jekyll deployment&quot;&gt;Obama’s campaign website&lt;/a&gt; leveraged Jekyll to increase conversions.&lt;/p&gt;
+&lt;p&gt;For bonus reading, see &lt;a href=&quot;http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform&quot; title=&quot;A blog detailing a serious, real-world Jekyll deployment&quot;&gt;how Obama’s campaign website leveraged Jekyll to increase conversions&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;concrete5concrete5&quot;&gt;&lt;a href=&quot;http://www.concrete5.org/&quot; title=&quot;Learn more about concrete5&quot;&gt;concrete5&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Concrete5 is another one I’ve seen gain more traction recently, so I’d taken it for a spin. I’d describe it as a balance between Jekyll and other systems. It was among the first I’m aware of to feature in-context editing, which is especially cool when building a site for people who consider themselves especially computer illiterate.&lt;/p&gt;
@@ -53,16 +53,16 @@
 &lt;p&gt;It’s the add-ons that turn me off. Even glancing at its marketplace of add-ons now, I’m seeing open source software repackaged for concrete and being sold for $50. I’m not wiring it up to try, so there may be serious added value that’s worth the money, but this is a far cry from what I’m accustomed to.&lt;/p&gt;
 
 &lt;h2 id=&quot;joomlajoomla&quot;&gt;&lt;a href=&quot;http://www.joomla.org/&quot; title=&quot;Learn more about Joomla!&quot;&gt;Joomla!&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Joomla! is another big one. I’ll admit, it’s been a long while since I’ve worked with it. It’s always felt a little dirty to me. Drupal’s documentation is great, save for the occasional unfinished page. The WordPress documentation has always been legendary. Joomla!’s has always been fragmented and underwhelming when I’ve looked for it. That’s bad.&lt;/p&gt;
+&lt;p&gt;Joomla! is another big one. I’ll admit, it’s been a long while since I’ve worked with it. It’s always felt a little dirty to me. Drupal’s documentation is great (or maybe I’ve gotten used to it), save for the occasional unfinished page. The WordPress documentation has always been legendary. Joomla!’s has always been fragmented and underwhelming when I’ve looked for it. That’s bad.&lt;/p&gt;
 
 &lt;p&gt;One bonus I gather from Joomla! is it’s supposed to be pretty flexible, but I’ve never tried using it that way, and can’t speak to its APIs and such.&lt;/p&gt;
 
 &lt;p&gt;I’d love to have a conversation with a Joomla! expert who could explain what he sees in it, but as it stands I can’t recommend Joomla! over Drupal or WordPress. That may be entirely because of my lack of experience with the CMS, so don’t take my word for it.&lt;/p&gt;
 
 &lt;h2 id=&quot;microsoft-sharepointshit&quot;&gt;&lt;a href=&quot;http://office.microsoft.com/en-us/sharepoint/&quot; title=&quot;Learn more about Sharepoint&quot;&gt;Microsoft Sharepoint&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Just typing Sharepoint makes me want to puke. I haven’t had to do much with it, but what I did have to do was a bad experience.  It’s always seemed like a confused product, but it looks like it’s improved a bit.&lt;/p&gt;
+&lt;p&gt;Sharepoint kinda makes me want to puke. I haven’t had to do much with it, but what I did have to do was a bad experience.  It’s always seemed like a confused product, but that was with a pretty ancient version. It looks like it’s improved a bit.&lt;/p&gt;
 
-&lt;p&gt;I’m not a Microsoft dev these days, so if you are, Sharepoint may be awesome for you. It may be the best option if you’re building for a company that’s already deep into Microsoft products and you need to integrate. But this is definitely not the platform you’d choose for a blog…&lt;/p&gt;
+&lt;p&gt;I don’t do much Microsoft dev these days, so if you or your team does, Sharepoint may be exactly what you want. It’s an especially great option if you’re building for a company that’s already deep into Microsoft products and you need to integrate. But this is definitely not the platform you’d choose for a blog…&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 02 Jul 2014 17:11:00 -0400</pubDate>
@@ -134,6 +134,42 @@
         <pubDate>Thu, 19 Jun 2014 17:11:00 -0400</pubDate>
         <link>http://joecastelli.com/remove-db-prefixes-drupal-7</link>
         <guid isPermaLink="true">http://joecastelli.com/remove-db-prefixes-drupal-7</guid>
+      </item>
+    
+      <item>
+        <title>Shopping for the right CMS for your next website? You may be getting duped.</title>
+        <description>&lt;p&gt;You create a product. You market it. You sell it. Duh, right? Everybody’s gotta eat. But there’s are things being said in day-to-day my-CMS-is-better-than-your-CMS discussions and marketing that I consider pretty misleading. In hopes that this will help at least one poor Googling soul who knows next to nothing about content management systems but has been tasked with choosing the next one his or her company will use for the new website, I’m going to air this out.&lt;/p&gt;
+
+&lt;p&gt;I’ve worked with a lot of the big ones, and I can promise you things. Listen.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-big-debate&quot;&gt;The big debate.&lt;/h2&gt;
+&lt;p&gt;As I’ve alluded to, us Web peeps tend to have our favorite content management systems – the one that’s most fun to code for, easiest to extend, does the most work for us – the ‘why’ is moot. We have favorites, even if we say we don’t, and even if we will always choose the right tool for the job.&lt;/p&gt;
+
+&lt;p&gt;We are passionate about our choice, and tend to defend it like we do other things we’re passionate about – our choice of personal computer (love my Macs, nose-up to the naysayers), our favorite car (I will duel you if you bash my Mustangs), our family (I will WRECK you). Sometimes, when one  defends one’s favorite something, seeing through the feels makes you to say stupid things.&lt;/p&gt;
+
+&lt;p&gt;Drupal vs. WordPress vs. Joomla vs. Concrete5 vs. Magento vs. Jekyll vs. [insert your favorite underdog here] – all have strengths and weaknesses. We can stab at each other’s favorite until we’re blue in the face and exactly nobody has changed their minds. &lt;/p&gt;
+
+&lt;p&gt;It’s relatively easy to identify a passionate Web nerd and see it for what it is, but there’s another factoid-spewer lurking in plain sight. It’s the marketing people trying to drive adoption of their system over the others.&lt;/p&gt;
+
+&lt;p&gt;I’ve certainly got nothing against businesses marketing. Do what you’ve gotta do. What I take issue with is the sometimes subtle, misleading language that the decision makers at companies around the world may be affected by.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-am-i-getting-duped&quot;&gt;How am I getting duped?&lt;/h2&gt;
+&lt;p&gt;There’s one marketing habit in particular that drives me insane. I stumbled across a CMS I hadn’t heard of. It seems to be popular with the big agencies around the world. I don’t even remember the name, to be honest.&lt;/p&gt;
+
+&lt;p&gt;The thing to be hesitant of are any generic claims that a specific CMS is ‘always 100% standards-compliant HTML5’ or ‘100% responsive.’ Anything like that is likely to be complete dupery.&lt;/p&gt;
+
+&lt;p&gt;It might not even be on its website. It could be in an affiliate’s blog/site, tweet, etc. The reason it’s dupery is that once you or the team you’ve hired get to building your site, these are features that they must implement.&lt;/p&gt;
+
+&lt;p&gt;While a CMS-based site COULD be compliant, responsive and the like (a good CMS should have fallback templates) once we begin theming, templating, writing extensions and the like, it’s up to us to produce proper markup. As we customize our site, we create, edit and/or repurpose template files. If the main selling point was this responsiveness or HTML5 awesomeness and your devs created a front end featuring neither, you’ve been duped, and tens of thousands of dollars later, no doubt.&lt;/p&gt;
+
+&lt;p&gt;Note that any claims about the admin dashboard and other areas that users and customers don’t see are likely valid. As developers, we rarely do anything to disrupt the structure/look of the back end admin area when building with a CMS. This part of the site is entirely separate from the public side, and exists solely for adding content and otherwise administrating the site.&lt;/p&gt;
+
+&lt;p&gt;That all said, &lt;a href=&quot;/which-cms-is-best&quot; title=&quot;Click here to see my CMS comparison article&quot;&gt;check out my CMS comparison&lt;/a&gt; for a rundown of my favorites.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 07 Jun 2014 17:11:00 -0400</pubDate>
+        <link>http://joecastelli.com/shopping-for-a-cms-you-might-be-getting-duped</link>
+        <guid isPermaLink="true">http://joecastelli.com/shopping-for-a-cms-you-might-be-getting-duped</guid>
       </item>
     
       <item>

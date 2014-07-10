@@ -5,7 +5,7 @@ date:   2014-07-02 21:11:00
 categories: web-ed CMS
 ---
 
-As I've said in a previous post about content management systems, we can tussle over which is best until we turn purple.
+As I've said in [a previous post about content management systems][joe-cms], we can tussle over which is best until we turn purple.
 
 I've worked with quite a few by now, and here's a quick rundown on some of them, and why I like them. I'll try to revisit this post from time-to-time as things evolve.
 
@@ -40,7 +40,7 @@ Also, this is as easy to design for as a platform can be. You can create a base 
 
 This site is built with Jekyll. Combine that with SSD hosting at DigitalOcean and things are pretty damn snappy, no? As such, Jekyll's my new recommendation for any situation where it can possibly fit, even for cases where it needs to be shoehorned just a little.
 
-For bonus reading, see how [Obama's campaign website][bama] leveraged Jekyll to increase conversions.
+For bonus reading, see [how Obama's campaign website leveraged Jekyll to increase conversions][bama].
 
 ## [concrete5][concrete5]
 Concrete5 is another one I've seen gain more traction recently, so I'd taken it for a spin. I'd describe it as a balance between Jekyll and other systems. It was among the first I'm aware of to feature in-context editing, which is especially cool when building a site for people who consider themselves especially computer illiterate.
@@ -50,18 +50,18 @@ The thing that makes it Jekylly is the speed with which you can go from design t
 It's the add-ons that turn me off. Even glancing at its marketplace of add-ons now, I'm seeing open source software repackaged for concrete and being sold for $50. I'm not wiring it up to try, so there may be serious added value that's worth the money, but this is a far cry from what I'm accustomed to.
 
 ## [Joomla!][joomla]
-Joomla! is another big one. I'll admit, it's been a long while since I've worked with it. It's always felt a little dirty to me. Drupal's documentation is great, save for the occasional unfinished page. The WordPress documentation has always been legendary. Joomla!'s has always been fragmented and underwhelming when I've looked for it. That's bad.
+Joomla! is another big one. I'll admit, it's been a long while since I've worked with it. It's always felt a little dirty to me. Drupal's documentation is great (or maybe I've gotten used to it), save for the occasional unfinished page. The WordPress documentation has always been legendary. Joomla!'s has always been fragmented and underwhelming when I've looked for it. That's bad.
 
 One bonus I gather from Joomla! is it's supposed to be pretty flexible, but I've never tried using it that way, and can't speak to its APIs and such.
 
 I'd love to have a conversation with a Joomla! expert who could explain what he sees in it, but as it stands I can't recommend Joomla! over Drupal or WordPress. That may be entirely because of my lack of experience with the CMS, so don't take my word for it.
 
 ## [Microsoft Sharepoint][shit]
-Just typing Sharepoint makes me want to puke. I haven't had to do much with it, but what I did have to do was a bad experience.  It's always seemed like a confused product, but it looks like it's improved a bit.
+Sharepoint kinda makes me want to puke. I haven't had to do much with it, but what I did have to do was a bad experience.  It's always seemed like a confused product, but that was with a pretty ancient version. It looks like it's improved a bit.
 
-I'm not a Microsoft dev these days, so if you are, Sharepoint may be awesome for you. It may be the best option if you're building for a company that's already deep into Microsoft products and you need to integrate. But this is definitely not the platform you'd choose for a blog...
+I don't do much Microsoft dev these days, so if you or your team does, Sharepoint may be exactly what you want. It's an especially great option if you're building for a company that's already deep into Microsoft products and you need to integrate. But this is definitely not the platform you'd choose for a blog...
  
-
+[joe-cms]: /shopping-for-a-cms-you-might-be-getting-duped "Click here to see my older post about CMS decisions"
 [drupal]: https://www.drupal.org/ "Learn more about Drupal"
 [wp]: http://wordpress.org/ "Learn more about WordPress"
 [jekyll]: http://jekyllrb.com/ "Learn more about Jekyll"

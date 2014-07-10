@@ -116,6 +116,28 @@ body {
 			font-size: 36px;
 		}
 	}
+
+	p.all-posts {
+		text-align: center;
+		text-transform: lowercase;
+	}
+
+	ul {
+		&.post-list {
+			list-style: none;
+			padding-left: 0;
+
+			a {
+				font-size: 20px;
+			}
+
+			span.date {
+				color: #777;
+				display: inline-block;
+				width: 100px;
+			}
+		}
+	}
 }
 
 @media (min-width: $screen-md-min) {

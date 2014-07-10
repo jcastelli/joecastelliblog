@@ -1,4 +1,4 @@
-<p>When I first began really diving into Web development, the lack of a clear starting point was staggering. All I could do was latch on to what I understood, read a lot, and research the terms that’d come up that I’d never even heard before.</p>
+<p>When I first began really diving into Web development, the lack of a clear starting point was staggering. All I could do was latch on to what I understood, read a lot, and research the terms that’d come up that I’d never even heard before. </p>
 
 <p>I took two courses in college that I’d argue to be my cornerstone: System administration I, and System administration II. Being a sysadmin in the real world pretty much means maintaining the servers and other infrastructure upon which other people – developers in particular – rely. The thing about these courses that gave me such a fantastic head start was the deep education on the command line interface of *nix-like operating systems.</p>
 
@@ -9,6 +9,7 @@
 <p>Let’s say you want to create a new folder on your desktop and create a few files within it. Rather than right click, fumble with naming/renaming, a few commands will get us where we need to be. On OS X:</p>
 
 <div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Change directory into my Desktop</span>
+<span class="c">## Note: The tilde(~) represents your home directory, which, in *nix systems, is completely unique for all users</span>
 <span class="nb">cd</span> ~/Desktop
 
 <span class="c"># Now that my working directory is my desktop, let&#39;s make my new folder</span>
@@ -26,5 +27,16 @@ touch my-diary.txt foo.txt bar.txt
 <span class="c"># Now let&#39;s list the contents of our new folder to ensure our files were created</span>
 ls -al</code></pre></div>
 
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>.</p>
+<p>At face value, this seems entirely pointless. Why learn commands to do this sort of thing? For starters, you could toss all these commands into a script, add a bit more code and run it on a schedule, creating new folders with files inside them. Similar things are often done in the real world to create log files that we can look back upon when things break.</p>
 
+<p>The thing is, these basic commands are only a start. The tools available to a savvy user are incredibly powerful. Have you ever wanted to separate the videos and images on an SD card into separate folders in one swoop? Maybe find all files in a folder than contain the word ‘taxes?’ You can also build an entire Web application using only the command line. In fact, I have several developer friends who do just that.</p>
+
+<p>Even if you don’t have a book or nerdfriend handy, you can see the ‘manual’ for almost any command by using the <code>man</code> command.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">man ls<span class="p">;</span>
+man <span class="nb">cd</span><span class="p">;</span>
+man touch<span class="p">;</span>
+
+<span class="c"># Each of the above commands will output a manual for the following command.</span></code></pre></div>
+
+<p>Learning your way around a Linux or Mac command line can ultimately lead to a better day-to-day computing experience. Take it for a spin!</p>
